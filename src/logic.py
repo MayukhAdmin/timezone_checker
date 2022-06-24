@@ -11,6 +11,7 @@ def area(location):
             date_now = datetime.now(tz)
             formatted_date = date_now.strftime("%B %d, %Y %H:%M:%S")
             print(f"{location} time: ", formatted_date)
+            print(eval("os.getcwd()"))  #Adding Eval function vulnerability
             break
 
     else:
